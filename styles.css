@@ -57,3 +57,85 @@ footer{background:#eac88e}
 @media(max-width:800px){.treatment-reel{width:100%;margin:60px auto 0;box-shadow:12px 14px 0 rgba(38,63,52,.15)}}
 .treatment-feedback{grid-column:1/-1;margin-top:22px;padding-top:24px;border-top:1px solid rgba(48,41,31,.16);display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:start;color:rgba(48,41,31,.68)}.treatment-feedback>span{font-size:8px;text-transform:uppercase;letter-spacing:.18em}.treatment-feedback p{font-size:11px;line-height:1.75;max-width:760px;margin:0;font-style:italic}
 @media(max-width:800px){.treatment-feedback{display:block;margin-top:42px}.treatment-feedback p{margin-top:14px;font-size:10px}}
+
+/* Pastel editorial — formas suaves, tipografia arredondada e paleta coordenada */
+:root{
+  --ink:#514841;
+  --cream:#fbf4e9;
+  --paper:#fffaf4;
+  --butter:#f4e4b8;
+  --peach:#f1d3c2;
+  --blush:#edcfd0;
+  --sage:#d6e2d1;
+  --sage-soft:#e6ede1;
+  --lilac:#ddd8e8;
+  --rose:#b87970;
+  --sand:#ead9c4;
+  --sun:#edcf82;
+  --terracotta:#b87970;
+  --green:#b8ccb2;
+  --green-soft:#d6e2d1;
+  --line:rgba(81,72,65,.14)
+}
+body{font-family:"Nunito Sans",sans-serif;font-weight:400;background:var(--paper);color:var(--ink)}
+.brand-mark,.hero h1,.manifesto h2,.section-head h2,.testimonial h2,.booking h2,.manifesto-aside,.hero-photo figcaption,.philosophy blockquote,.signature,.principles h3,.service h3,.gallery figcaption span,.booking-info p,.treatments-head h2,.treatment-details p{font-family:"Fraunces",serif}
+.hero h1,.manifesto h2,.section-head h2,.testimonial h2,.booking h2,.treatments-head h2{letter-spacing:-.045em;line-height:.96}
+.eyebrow{letter-spacing:.2em;font-weight:700;color:#88796f}
+.site-header{border-bottom-color:var(--line)}
+.header-cta,.text-link{border:0;background:var(--butter);padding:11px 18px;border-radius:999px;font-weight:700}
+.hero{background:linear-gradient(135deg,var(--cream) 0%,var(--paper) 55%,var(--peach) 100%)}
+.sun{background:radial-gradient(circle at 60% 38%,#fff8d8 0,var(--butter) 43%,#eacb82 100%);opacity:.72;filter:blur(1px);box-shadow:0 0 140px rgba(237,207,130,.32)}
+.hero em,.manifesto em,.testimonial em,.booking em,.treatments-head h2 em{color:var(--rose)}
+.hero-photo{border-radius:42px 42px 180px 42px;box-shadow:22px 24px 0 var(--sage);overflow:hidden}
+.hero-photo figcaption{left:18px;bottom:18px;border:0;border-radius:22px;background:rgba(255,250,244,.9);backdrop-filter:blur(9px)}
+.mini-sun{background:var(--butter);box-shadow:0 0 80px rgba(237,207,130,.52)}
+.manifesto{background:var(--paper)}
+.philosophy{margin:0 2.2vw;border-radius:58px;background:var(--sage);color:var(--ink);overflow:hidden}
+.philosophy .portrait{border-radius:180px 40px 40px 40px;box-shadow:-20px 22px 0 var(--butter);overflow:hidden}
+.signature span,.principles span,.service-no{color:var(--rose)}
+.principles{border:0;gap:16px}
+.principles article,.principles article+article{min-height:180px;padding:30px;border:1px solid rgba(81,72,65,.1);border-radius:28px;background:rgba(255,250,244,.48)}
+.services{background:var(--paper)}
+.service-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.service,.service:last-child{grid-template-columns:46px 1fr 44px;gap:20px;padding:30px;border:1px solid var(--line);border-radius:30px;background:var(--cream)}
+.service:nth-child(2){background:var(--peach)}.service:nth-child(3){background:var(--sage-soft)}.service:nth-child(4){background:var(--lilac)}
+.service-tag{display:none}
+.service button{background:rgba(255,250,244,.62);border-color:var(--line);color:var(--ink)}
+.service:hover button{background:var(--rose);color:#fffaf4}
+.treatments{margin:0 2.2vw;padding:120px 7vw;border-radius:58px;background:var(--butter);color:var(--ink)}
+.treatments:before{border-color:rgba(184,121,112,.23)}
+.treatment-reel{border-radius:42px;box-shadow:20px 22px 0 var(--peach);background:var(--sage)}
+.treatment-video{background:var(--sage)}
+.treatment-watch i{background:var(--rose);color:var(--paper)}
+.treatment-details,.treatment-feedback{border-color:var(--line)}
+.portfolio{margin-top:28px;background:var(--peach)}
+.gallery{gap:20px}
+.gallery figure{border-radius:36px}
+.gallery figcaption{background:linear-gradient(transparent,rgba(81,72,65,.62))}
+.testimonial{background:var(--cream)}
+.sun-outline{border-color:#ddc883;box-shadow:0 0 130px rgba(237,207,130,.3)}
+.booking{margin:28px 2.2vw;border-radius:58px;background:var(--blush);color:var(--ink)}
+.booking:after{background:radial-gradient(circle,var(--lilac) 0%,rgba(221,216,232,0) 70%);opacity:.9}
+.booking .button{background:var(--sage);color:var(--ink);border-radius:999px}
+.booking-info{border-color:var(--line)}
+.booking-info>div{border-color:var(--line)}
+footer{background:var(--sage);margin:0 2.2vw 2.2vw;border-radius:34px}
+
+@media(max-width:800px){
+  .site-header.open{background:var(--cream)}
+  .site-header.open nav{font-family:"Fraunces",serif}
+  .header-cta,.text-link{padding:10px 15px}
+  .hero-photo{border-radius:30px 30px 110px 30px;box-shadow:12px 14px 0 var(--sage)}
+  .hero-photo figcaption{left:12px;bottom:12px;border-radius:18px}
+  .philosophy,.treatments,.booking{margin-left:12px;margin-right:12px;border-radius:36px}
+  .philosophy .portrait{border-radius:110px 28px 28px 28px;box-shadow:-10px 12px 0 var(--butter)}
+  .principles{display:grid;gap:12px}
+  .principles article,.principles article+article{padding:24px;border:1px solid rgba(81,72,65,.1);border-radius:24px}
+  .service-list{grid-template-columns:1fr;gap:12px}
+  .service,.service:last-child{grid-template-columns:34px 1fr 40px;padding:24px 20px;border-radius:24px}
+  .treatments{padding:88px 23px}
+  .treatment-reel{border-radius:30px;box-shadow:11px 13px 0 var(--peach)}
+  .gallery figure{border-radius:28px}
+  .booking{padding:88px 23px}
+  footer{margin:12px;border-radius:28px}
+}
